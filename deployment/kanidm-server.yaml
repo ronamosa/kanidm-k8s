@@ -1,0 +1,121 @@
+# Source: kanidm/templates/secrets.yaml
+apiVersion: v1
+data:
+ ca.pem: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURzVENDQXBtZ0F3SUJBZ0lVZnkvRkdhSUtIbFpXakFMNTl5WWxpeU0zVmxBd0RRWUpLb1pJaHZjTkFRRUwKQlFBd2FERUxNQWtHQTFVRUJoTUNRVlV4RXpBUkJnTlZCQWdNQ2xGMVpXVnVjMnhoYm1ReEVUQVBCZ05WQkFjTQpDRUp5YVhOaVlXNWxNUkV3RHdZRFZRUUtEQWhKVGxORlExVlNSVEVlTUJ3R0ExVUVBd3dWYVc1elpXTjFjbVV1ClkyRXViRzlqWVd4b2IzTjBNQjRYRFRJd01EWXlPREE1TURNd05sb1hEVEl3TURjeU9UQTVNRE13Tmxvd2FERUwKTUFrR0ExVUVCaE1DUVZVeEV6QVJCZ05WQkFnTUNsRjFaV1Z1YzJ4aGJtUXhFVEFQQmdOVkJBY01DRUp5YVhOaQpZVzVsTVJFd0R3WURWUVFLREFoSlRsTkZRMVZTUlRFZU1Cd0dBMVVFQXd3VmFXNXpaV04xY21VdVkyRXViRzlqCllXeG9iM04wTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUFwaEdxMzdqZi8vaGYKSTV4eEllR0dYRHpRbGJUcEM5eUhaaWRsUW9rUVYyYlgzRDQ1RmpNTzBVOGNuNkJCZUdvaVVMVXI1elRtanl2Rwp4RFZSU0I5eldJTlBrbEEyMUsrWW9vV1VmNmRsNWdqOU0rRm1wdWp1K2RuTDh1ZVFMVTZlRWFtTHE2Qm5IWmxJCjRCUUJkQ05HYVQyQ2RoMkV6MElTWHFOVVNzblFBTlA2Rk9JRVpSMXJqSnJaa0MzM2RueENjVXdoZHY1L2JlWnMKOUVoNW5wWVJhaGEzZ0pJbmJoSTA1M0tXODN5SUlDOFRML2hMQkRXTmVhVWpSTmdTYk5NaU1OYkNTQkNkWTNpVQpOK2hzd1dOblU1VnZvNlVicW5MV3FEcUVYa3RFVHMzbU94ekhYWm1oaW9rR00wUlYwK2w1a1FjUEVlc3FxWmxpCk1HUm56OGVpaHdJREFRQUJvMU13VVRBZEJnTlZIUTRFRmdRVXczNXFSWUx0R2JqbkM0L20wY2ZvQmRJVHVVa3cKSHdZRFZSMGpCQmd3Rm9BVXczNXFSWUx0R2JqbkM0L20wY2ZvQmRJVHVVa3dEd1lEVlIwVEFRSC9CQVV3QXdFQgovekFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBU2J3akQvOEdLZjV5VnpxTXBOV3plTXQxUnJUblJiaGY0N0dvCmw2Nld3a3QrMWpVUkJsVXFqNU9DTksyaUN5c2NwQkduUk84dkdEM2tuNHhqTDVjVkZaZDU0d3V0cHVIaXV5RDkKVzdHcXBVODR3aHIrYlZDN1lrYUpUQ3Q3QVlJOE1UdG5TTEM0UFNoZG9sYlAvZTEyZmtJTUcwNUhNKzFzb2pQRgpDbkswWll1L3UzdTlOVW9oR0lWSEwvVko4WDBrVHZBc1VkYTJmRjZEVXJ4U2JFY3RtUnpFOTJsaWQrajMwZHpuCndBN2ZaUThMcUJnSS9lU295c29SVXJwaGxFeisvQWIrWmZaaFJOZUd1YVVmZEJrSWtjdWRZYmFIY3UzOTNaWUYKcnRpQ2tHeWZaRlUyUmJYOGNJQUZoVTFjUVpkRUlQOVc0M2N0VngvellIbElBanFvSnc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+ cert.pem: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURuekNDQW9lZ0F3SUJBZ0lVVjE2UXFrdDRTM25jMU1jM1I5Y2RZbzlZWEZNd0RRWUpLb1pJaHZjTkFRRUwKQlFBd2FERUxNQWtHQTFVRUJoTUNRVlV4RXpBUkJnTlZCQWdNQ2xGMVpXVnVjMnhoYm1ReEVUQVBCZ05WQkFjTQpDRUp5YVhOaVlXNWxNUkV3RHdZRFZRUUtEQWhKVGxORlExVlNSVEVlTUJ3R0ExVUVBd3dWYVc1elpXTjFjbVV1ClkyRXViRzlqWVd4b2IzTjBNQjRYRFRJd01EWXlPREE1TURNeU5sb1hEVEl3TURjeU9UQTVNRE15Tmxvd2N6RUwKTUFrR0ExVUVCaE1DVGxveEVUQVBCZ05WQkFnTUNFRjFZMnRzWVc1a01SRXdEd1lEVlFRSERBaEJkV05yYkdGdQpaREVaTUJjR0ExVUVDZ3dRU1U1VFJVTlZVa1VnUlZoQlRWQk1SVEVQTUEwR0ExVUVDd3dHUzJGdWFVUk5NUkl3CkVBWURWUVFEREFsc2IyTmhiR2h2YzNRd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUIKQVFDcWo4SXJrMG9EVXlLTFBsMEE2aGttdEtFYVRoR0xsRGhSOVVqOUxHd01NOFZ0Nnd2dko3Ky8wL05PdTU0LwpEK3B6Qm5xMFhRS1I5M0lqazBzYjgyS3BhaCsxby9pa3FoZ1pYYXBkNlVjOE0wL2NHSnFNKytaY0IxenNFZjNCClc4NFJiYWFFdTFKSllEVmMrTFlVSU9ycnJWWkJBaFdTSUV2bmxIZlFhZEtGUmNBVFkwSkVCTHhLRlMrUy9NUWEKd2swdmxuaTdMOVhOSlNRVnhmQVdacG5iUGJpSkdKRHg4UU4ySkdGVDc5dVh5dkxNM2IxdTdSLzVTa2s2SkhRYQp5WVg2Z0FuS2czQWEvU29uTVNTbWp3NEpkRmJhU1g1OHE1YXMvd0FTSmpvNWF4anc4ektFWmN2NlRiRTZ3c0gyCnY0NmVZRUNCUTNhaVhYMzJEMGYvYnhhSEFnTUJBQUdqTmpBME1Ba0dBMVVkRXdRQ01BQXdDd1lEVlIwUEJBUUQKQWdYZ01Cb0dBMVVkRVFRVE1CR0NDV3h2WTJGc2FHOXpkSWNFZndBQUFUQU5CZ2txaGtpRzl3MEJBUXNGQUFPQwpBUUVBTXcwVzQrbnhYbEZTMldIMXVBZEhrZ0lLTllvSjJGekNTK2ZYZXk4UDBhV3hTTmwzbmpvRjdkRUlMd3l0CnFYYms3aGcyTTNzUmx1Mmc5aGpMaHR5VlNHR1QycS9Pb05vL1gzNDNxdTVBT1NHM2s5eGtBMnRCTW93U2dVOTYKQlFrZTZPd1dtUE54ZVpmWkJvcmtaNnF2MXpHN1dISCtZQ0Y5TC9VODIwWUpIUGxQdnBJMmRHa1hxRHFTU2FtZApabExZZWh4bEwvb0hXa2F4eEt2d3AxclBOM0VTTzJvdWdCWitxL01PekVMcXgxMU9zbHI3S2J4Z0FXSHRwN1V3Ck5lTXloejd5aWlVWWFRWVNXMXpIYTg0cWk5cHdEZHoxNVJEUExsSUpHcmptekF2L1dqRVpJMkdkaEhVdjRuOGcKRFlmNU05aGZ1Z0MvZGtXYXdLL251aGFRL3c9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+ key.pem: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb2dJQkFBS0NBUUVBcW8vQ0s1TktBMU1paXo1ZEFPb1pKclNoR2s0Umk1UTRVZlZJL1N4c0REUEZiZXNMCjd5ZS92OVB6VHJ1ZVB3L3Fjd1o2dEYwQ2tmZHlJNU5MRy9OaXFXb2Z0YVA0cEtvWUdWMnFYZWxIUEROUDNCaWEKalB2bVhBZGM3Qkg5d1Z2T0VXMm1oTHRTU1dBMVhQaTJGQ0RxNjYxV1FRSVZraUJMNTVSMzBHblNoVVhBRTJOQwpSQVM4U2hVdmt2ekVHc0pOTDVaNHV5L1Z6U1VrRmNYd0ZtYVoyejI0aVJpUThmRURkaVJoVSsvYmw4cnl6TjI5CmJ1MGYrVXBKT2lSMEdzbUYrb0FKeW9Od0d2MHFKekVrcG84T0NYUlcya2wrZkt1V3JQOEFFaVk2T1dzWThQTXkKaEdYTCtrMnhPc0xCOXIrT25tQkFnVU4yb2wxOTlnOUgvMjhXaHdJREFRQUJBb0lCQUV4bVVLZU1ObDcrNGo1VgpGUHZQNEt4QnhOZ3ZtQlJadEZDaCtxdk5OaWpSRitLQW9ydmhwamFiRGlWNlRRd2FhUDVWTEttVjhBektOa3BSCk5CZTFFY0NwVk1MY1RBZ1dXTzBqMDZoMVVmOVpUTEJlSlB4NTZWblh3bnZNSTBwMWdQeTFqUjF2ZXhCN0Urd3QKVEFJQUxMcWN6a0lZV09rM3BraDViS0hpaFBaRTZPMUlsSUxVeFNWODk5WUs2c0NON3V6N1YvdTAzUSszenBTbwpjcXpsemk2czJnRHpNREpML0NnK3lOc2x4Si9EM0U3Z1RLSDVxZHhubThpUC9KM3VucWZ1Si83UkhwaVgzOTBLCkhreXZBMWV0eFZ2eExBOFVPRVI5bnJiaUcvdUlQOC8yN0QrdkFsNUJRQmMrbmRtTnFlRURpSGtxKzVUN3FRSmQKZDdRVW9BRUNnWUVBMFdjMzNVUUwzZzBLTWZva3IzU3FZVys0NmNWdG1KWjQxYWk2QXpBMmYyU3gyd0VxUkxiSQo4ZHd2eU95OHNwWHFDQ0F3UnFJTzhoeHB0YmJTSlJDcEJ6QVlyZ0xYT3NmUGxCaCtENEg5SXczTHFPcnQ1amhDCmFVSVRwSjVrdElHMlZzY2tQSjFsS0gzSE9xU3BYOU1hbEhwa2UzNFNCSlZGbWp4SzhNSmZLb2NDZ1lFQTBJUG4KQW9oaWo2b0grcXp5Y2RMWFc4emtQMVVWa05zWmtuRXIwRC9Md1dlZ0RtS1l1TTVrZHBWS1hHT1ZoNkVUa0o2dgpQMUZkZHlyQm1XZ1VvSGo5TUg0dDM1ZFErcXhRdFYra3lXT3BDMlpqZHRkV09SSmFRT2tiUWVFUnd0b0hNTTYrCkFZZSs4QXFzWEJKVFlmK0xzVWlIRTJ2aEVnNUpNZzJqQzVEUHRBRUNnWUJJdWNsc0hscmt4ckNZeE9DQzAwanQKU0NqM2Y2cmRpTHowcjRIUzQ2YTV2ZFlMVXE5RWFCc0g3TW5ueFZpUHlZTWJTVnFhM1dQRmNGckNVbmxQaUNhOApLVmNZOEVHaDE0MWZTTlpYT25VWS9JeVQ0T3U0dmlkS2VUbHJQZHVKMlZiamNveENSUVBCK1ZUOUovenZHOWtxCllndU4zQzRUeTJmOTloeXMyMFREOXdLQmdEN3NYdzBMblRxZlkvTUl0ODBUaER2R3MrWk14Y3BGNUF5bUxFT1cKek9VYllWaVY5bUptbmppT3lyYmdzbUlRZ0xmMnV3blBndllRS0FZa08zMUZwWm81cVp3OHJJcEk3NzRjRTcxVwpYcy82NE84ZkFuME1oY0hxMW5mbDlKY3BkbHdMTjVsOG5ta1B2MzIxWmdZL3VLY1NMUGoyYUNBcndYamlWcDZKCjM3UUJBb0dBWGhLZk9HQVJ0Y01ETnYyOVRNNGExK09yTkdqWTFncUVJdmVrMnBWL0V3RlVnVkZITVI1TzlSM0UKeVR6Z2xSalFkQ3c0YWlIamszNTZ5WGFNTUdhZENJWk1iY2hRekhqdHlrUlFsdmxPUmdzUit0RHpJVjZOY0d3dQpQaTQzdkdJV09nRUt2dWlEcDZ4Z1RMZHFoVFlvTmZxYXhjNGtPTzFMTnNicG9pV3VVUGc9Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
+kind: Secret
+metadata:
+ name: kanidm-tls
+type: Opaque
+---
+# Source: kanidm/templates/config.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kanidm-config
+data:
+  server.toml: |
+    bindaddress = "127.0.0.1:8443"
+    db_path = "/data/kanidm.db"
+    tls_ca = "/ssl/ca.pem"
+    tls_cert = "/ssl/cert.pem"
+    tls_key = "/ssl/key.pem"
+    log_level = "verbose"
+---
+# Source: kanidm/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: kanidm
+  labels:
+    helm.sh/chart: kanidm-0.1.0
+    app.kubernetes.io/name: kanidm
+    app.kubernetes.io/instance: kanidm
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+---
+# Source: kanidm/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: kanidm
+  labels:
+    helm.sh/chart: kanidm-0.1.0
+    app.kubernetes.io/name: kanidm
+    app.kubernetes.io/instance: kanidm
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8443
+      targetPort: http
+      protocol: TCP
+      name: http
+    - port: 389
+      targetPort: 3389
+      protocol: TCP
+      name: ldap
+  selector:
+    app.kubernetes.io/name: kanidm
+    app.kubernetes.io/instance: kanidm
+---
+# Source: kanidm/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kanidm
+  labels:
+    helm.sh/chart: kanidm-0.1.0
+    app.kubernetes.io/name: kanidm
+    app.kubernetes.io/instance: kanidm
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: kanidm
+      app.kubernetes.io/instance: kanidm
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: kanidm
+        app.kubernetes.io/instance: kanidm
+    spec:
+      serviceAccountName: kanidm
+      securityContext:
+        {}
+      containers:
+        - name: kanidm
+          securityContext:
+            {}
+          image: "kanidm/server:latest"
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            - name: "tls-certs"
+              mountPath: "/ssl"
+            - name: "config-volume"
+              mountPath: "/data"              
+          ports:
+            - name: http
+              containerPort: 8443
+              protocol: TCP
+          #livenessProbe:
+          #  httpGet:
+          #    path: /
+          #    port: http
+          #readinessProbe:
+          #  httpGet:
+          #    path: /
+          #    port: http
+          resources:
+            {}
+      volumes:
+        - name: config-volume
+          configMap:
+            name: kanidm-config
+        - name: tls-certs
+          secret:
+            secretName: kanidm-tls
