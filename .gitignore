@@ -1,3 +1,2 @@
-certs/*
-**/*.pem
+certs/*.pem
 helm/kanidm/templates/secrets.yaml
