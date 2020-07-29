@@ -27,7 +27,7 @@ organizationalUnitName_default =  KaniDM
 
 commonName                      = Common Name (eg, your name or your server\'s hostname)
 commonName_max                  = 64
-commonName_default              = hx0.kanidm.local
+commonName_default              = k8s.kanidm.local
 
 [ v3_req ]
 
@@ -38,7 +38,7 @@ keyUsage = nonRepudiation, digitalSignature, keyEncipherment
 subjectAltName = @alt_names
 
 [alt_names]
-DNS.1 = hx0.kanidm.local
+DNS.1 = k8s.kanidm.local
 
 DEVEOF
 

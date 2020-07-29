@@ -163,6 +163,28 @@ update `/etc/hosts` e.g.
 10.152.183.232  k8s.kanidm.local
 ```
 
+### initialize database
+
+jump into the kanidm pod e.g.
+
+```bash
+$ microk8s.kubectl exec -ti kanidm-7b869bdcbc-ljcdr bash
+```
+
+run `recover_account` command
+
+```bash
+$ /sbin/kanidmd recover_account -c /data/server.toml -n admin
+```
+
+### setup domain for spn
+
+while still in the kanidm pod, run the following
+
+```bash
+$ /sbin/kanidmd domain_name_change -c /data/server.toml -n idm.example.com
+```
+
 test kanidm setup _(note: you need `kanidm` binary installed first, see [kanidm docs](https://github.com/kanidm/kanidm/blob/master/kanidm_book/src/client_tools.md) for instructions)_
 
 ```bash
@@ -189,5 +211,9 @@ $ something here
 ### Basic usage
 
 ```bash
+# upgrade helm chart
 $ microk8s.helm3 upgrade --install --debug kanidm helm/kanidm
+
+# delete helm chart
+$ microk8s.helm3 delete kanidm
 ```
