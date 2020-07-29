@@ -205,15 +205,13 @@ claims: []
 ### Commands
 
 ```bash
-$ something here
-```
-
-### Basic usage
-
-```bash
 # upgrade helm chart
 $ microk8s.helm3 upgrade --install --debug kanidm helm/kanidm
 
 # delete helm chart
 $ microk8s.helm3 delete kanidm
 ```
+
+### Basic usage
+
+TBC
