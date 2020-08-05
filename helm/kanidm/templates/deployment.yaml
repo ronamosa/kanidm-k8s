@@ -69,7 +69,12 @@ spec:
           secret:
             secretName: {{ .Release.Name }}-certs
         - name: data
-          emptyDir: {}                      
+          {{- if .Values.persistence.enabled }}
+          persistentVolumeClaim:
+            claimName: {{ if .Values.persistence.existingClaim }}{{ .Values.persistence.existingClaim }}{{- else }}{{ .Values.persistence.staticClaimName }}{{- end }}
+          {{- else }}
+          emptyDir: {}
+          {{- end  }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
