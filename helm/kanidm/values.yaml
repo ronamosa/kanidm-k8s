@@ -68,6 +68,32 @@ resources: {}
   #   cpu: 100m
   #   memory: 128Mi
 
+persistence:
+  enabled: true
+  ## Set annotations on pvc
+  annotations: {}
+
+  ## Specify an existing volume claim instead of creating a new one.
+  ## When using this option all following options like storageClass, accessMode and size are ignored.
+
+  # Option 1: Use Existing Claim
+  # existingClaim:
+
+  # Option 2: Static Provisioning (local disks)
+  # - storageClass set to "manual"
+  # - dynamic provisioning disabled
+  staticClaimName: "pv-hostpath"
+  storageClass: "manual"
+  accessMode: ReadWriteOnce
+  size: 1Gi
+
+  # Option 3: Dynamic Provisioning (storage class)
+  # - create a storageClass under 'storage/*Class.yaml'
+  # - dynamic provisioning enabled
+  #storageClass: "nameOfStorageClass"
+  #accessMode: ReadWriteOnce
+  #size: 5Gi
+
 autoscaling:
   enabled: false
   minReplicas: 1

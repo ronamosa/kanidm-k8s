@@ -6,9 +6,9 @@ Read the [kanidm docs/install the server](https://github.com/kanidm/kanidm/blob/
 
 ## Features
 
-The helm chart provides
+The helm chart provides (eventually)
 
-* persistent storage class
+* persistent storage
 * secret management
 * container security
 * auto-scaling (hpa)
@@ -140,6 +140,20 @@ volumes:
     emptyDir: {}
 ```
 
+## Create Persistent Volumes
+
+You want your kanidm database mounted at `/db` to persist when the pod dies, so create a persistent volume for your microK8s setup as follows:
+
+`microk8s.kubectl apply -f ./persistent-storage/pv-hostpath.yaml`
+
+Check its all setup and ready to go:
+
+```sh
+microk8s.kubectl get pv,pvc
+NAME                           CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS     CLAIM                 STORAGECLASS   REASON   AGE
+persistentvolume/pv-hostpath   1Gi        RWO            Retain           Released   default/pv-hostpath   manual                  2d
+```
+
 ## Deploy kanidm
 
 ### Local: microK8s
@@ -210,8 +224,7 @@ $ microk8s.helm3 upgrade --install --debug kanidm helm/kanidm
 
 # delete helm chart
 $ microk8s.helm3 delete kanidm
+
+# check PersistentVolumes, PersistentVolumeClaims
+$ microk8s.kubectl get pv,pvc
 ```
-
-### Basic usage
-
-TBC
