@@ -137,8 +137,15 @@ volumes:
     secret:
       secretName: {{ .Release.Name }}-certs
   - name: data
+    {{- if .Values.persistence.enabled }}
+    persistentVolumeClaim:
+      claimName: {{ if .Values.persistence.existingClaim }}{{ .Values.persistence.existingClaim }}{{- else }}{{ .Values.persistence.staticClaimName }}{{- end }}
+    {{- else }}
     emptyDir: {}
+    {{- end  }}
 ```
+
+Note: configMap will mount to `/data`, cert data is coming from k8s secrets, and `/db` data is persisted using a PersistentVolume and PersistentVolumeClaims.
 
 ## Create Persistent Volumes
 
